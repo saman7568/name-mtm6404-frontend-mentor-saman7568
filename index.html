@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blogr Landing Page</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Blogr</div>
+      <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false">&#9776;</button>
+      <!-- Replace the old buttons section with this -->
+<div class="buttons">
+  <a href="login.html"><button class="secondary-btn">Login</button></a>
+  <a href="signup.html"><button class="primary-btn">Sign Up</button></a>
+  
+</div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign up for our 30-day trial. No credit card required.</p>
+        <button id="start-trial-btn" class="primary-btn">Start my trial</button>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2>Features</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <h3>Blog Posts</h3>
+          <p>Write and share your ideas with our easy-to-use editor.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Analytics</h3>
+          <p>Track the performance of your blog posts in real-time.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Custom Domains</h3>
+          <p>Use your own domain to build your brand and reach your audience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing container">
+      <h2>Pricing</h2>
+      <div class="pricing-cards">
+        <div class="card">
+          <h3>Basic</h3>
+          <p>$10 / month</p>
+          <button class="pricing-btn" data-plan="Basic">Choose Basic</button>
+        </div>
+        <div class="card">
+          <h3>Pro</h3>
+          <p>$20 / month</p>
+          <button class="pricing-btn" data-plan="Pro">Choose Pro</button>
+        </div>
+        <div class="card">
+          <h3>Business</h3>
+          <p>$30 / month</p>
+          <button class="pricing-btn" data-plan="Business">Choose Business</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="email">Email:</label>
+        <input id="email" type="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" required></textarea>
+        <button type="submit" class="primary-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Blogr. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
